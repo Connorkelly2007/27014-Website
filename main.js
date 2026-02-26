@@ -1,11 +1,3 @@
-
-// JavaScript Document
-
-// Tooplate 2149 Strategic Consulting
-
-// https://www.tooplate.com/view/2149-strategic-consulting
-
-// Mobile Menu Toggle
 const mobileMenu = document.querySelector('.mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
