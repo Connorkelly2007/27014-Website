@@ -1,13 +1,4 @@
-
 @charset "utf-8";
-/* CSS Document 
-
-Tooplate 2149 Strategic Consulting
-
-https://www.tooplate.com/view/2149-strategic-consulting
-
-*/
-
 * {
 	margin: 0;
 	padding: 0;
@@ -21,7 +12,70 @@ body {
 	overflow-x: hidden;
 	background: #f8fafc;
 }
+/* Hero Section */
+.hero-section {
+ background: #f8fafc;
+  color: black;
+  padding: 4rem 2rem;
+}
 
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section heading */
+.hero-section .section-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: black;
+    padding-top: 6rem; /* extra space for the page heading */
+}
+
+/* Grid for two boxes */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Boxes styling */
+.hero-grid .box {
+  background: white;       /* white boxes */
+  color: black;            /* black text */
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  position: relative;
+}
+
+/* Box titles */
+.hero-grid .box-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Left box text */
+.hero-grid .hero-text p {
+ color: black;
+	line-height: 1.7;
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+
+
+}
+
+/* Right box image */
+.hero-grid .hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
 /* Navigation */
 .navbar {
 	position: fixed;
@@ -128,27 +182,6 @@ body {
 	transition: 0.3s;
 	border-radius: 2px;
 }
-
-/*Section Styles*/
-/* Remove default margins so it truly fills the page */
-body {
-  margin: 0;
-}
-
-.hero {
-  width: 100%;
-  height: 100vh; /* full viewport height */
-}
-
-.hero-inner {
-  width: 100%;
-  height: 100%;
-  background-image: url("example.png"); /* placeholder file */
-  background-size: cover;      /* fills entire area */
-  background-position: center; /* keeps image centered */
-  background-repeat: no-repeat;
-}
-
 /* Section Styles */
 .section {
 	padding: 8rem 5%;
@@ -175,7 +208,7 @@ body {
 
 /* Services Section - Tab Layout */
 .services {
-	background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f8fafc 100%);
+	background: white;
 	position: relative;
 }
 
@@ -765,7 +798,7 @@ body {
 
 /* Testimonials Section - Overlapping Layout */
 .testimonials {
-	background: linear-gradient(135deg, #e2e8f0 0%, #f8fafc 100%);
+	background: white;
 	position: relative;
 	overflow: hidden;
 }
